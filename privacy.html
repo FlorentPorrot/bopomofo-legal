@@ -5,81 +5,80 @@
   <meta name='viewport' content='width=device-width'>
   <title>Privacy Policy</title>
   <style> 
-    body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; padding:1em; line-height: 1.6; color: #333; } 
-    h2 { font-size: 1.2em; border-bottom: 1px solid #ccc; padding-bottom: 5px; margin-top: 20px; }
+    body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; padding:1em; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; } 
+    h2 { font-size: 1.2em; border-bottom: 1px solid #ccc; padding-bottom: 5px; margin-top: 30px; color: #2c3e50; }
+    h3 { font-size: 1em; margin-top: 20px; font-weight: bold; color: #34495e; }
     ul { margin-bottom: 15px; }
     li { margin-bottom: 5px; }
     a { color: #3498db; text-decoration: none; }
     a:hover { text-decoration: underline; }
+    .update-note { background-color: #e8f6f3; padding: 10px; border-radius: 5px; border-left: 4px solid #1abc9c; margin-bottom: 20px; }
   </style>
 </head>
 <body>
     <h1>Privacy Policy</h1>
+    <div class="update-note">
+        <strong>Last Updated:</strong> January 10, 2026<br>
+        <em>Updates: Added details regarding Analytics (PostHog), Daily Reminders, and Avatar Uploads.</em>
+    </div>
+
     <p>This privacy policy applies to the <strong>Bopomofo Master: Learn Zhuyin</strong> app (hereby referred to as "Application") for mobile devices that was created by Florent Porrot (hereby referred to as "Service Provider") as a Freemium service. This service is intended for use "AS IS".</p>
     
-    <h2>Information Collection and Use</h2>
-    <p>The Application collects information when you download and use it. This information may include:</p>
+    <h2>1. Information Collection and Use</h2>
+    <p>The Application collects information when you download and use it. This information includes:</p>
     <ul>
-        <li>Your device's Internet Protocol address (e.g. IP address)</li>
-        <li>The pages of the Application that you visit, the time and date of your visit, and the time spent on those pages</li>
-        <li>The operating system you use on your mobile device</li>
-        <li>Aggregated game statistics and learning progress (to sync your data across devices)</li>
+        <li><strong>Device Information:</strong> Your device's Internet Protocol address (e.g. IP address), operating system version, and device model.</li>
+        <li><strong>Usage Data:</strong> The pages of the Application that you visit, the time and date of your visit, time spent on those pages, and game completion statistics.</li>
+        <li><strong>User Accounts:</strong> If you create an account, we collect your Email Address and assign you a unique User ID to sync your progress across devices.</li>
+        <li><strong>User Generated Content:</strong> If you choose to upload a profile picture (Avatar), this image is stored on our secure servers and linked to your account.</li>
     </ul>
 
-    <p>The Application does not gather precise information about the location of your mobile device.</p>
+    <p>The Application does not gather precise information about the location of your mobile device (GPS).</p>
     
-    <p>The Service Provider may use the information you provided to contact you from time to time to provide you with important information, required notices, and marketing promotions.</p>
+    <h2>2. Third-Party Services</h2>
+    <p>Only aggregated or necessary data is transmitted to external services to aid the Service Provider in improving the Application and providing its core features. The Application uses the following third-party services:</p>
     
-    <p>For a better experience, while using the Application, the Service Provider may require you to provide us with certain personally identifiable information, including but not limited to <strong>Email, User ID, and Profile Picture</strong>. The information that the Service Provider requests will be retained by them and used as described in this privacy policy.</p>
-    
-    <h2>Third Party Access</h2>
-    <p>Only aggregated, anonymized data is periodically transmitted to external services to aid the Service Provider in improving the Application and their service. The Service Provider may share your information with third parties in the ways that are described in this privacy statement.</p>
-    
-    <p>Please note that the Application utilizes third-party services that have their own Privacy Policy about handling data. Below are the links to the Privacy Policy of the third-party service providers used by the Application:</p>
+    <h3>2.1 Analytics (PostHog)</h3>
+    <p>We use <strong>PostHog</strong> to analyze how users interact with the app (e.g., which game modes are popular, where users get stuck). This helps us improve the learning experience.</p>
     <ul>
-        <li><a href="https://supabase.com/privacy" target="_blank" rel="noopener noreferrer">Supabase</a> (Database & Authentication)</li>
-        <li><a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">RevenueCat</a> (Payments & Subscriptions)</li>
-        <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Sign-In</a> (Authentication)</li>
-        <li><a href="https://www.apple.com/legal/privacy/en-ww/" target="_blank" rel="noopener noreferrer">Apple Sign-In</a> (Authentication)</li>
+        <li><strong>Data Collected:</strong> Anonymous device IDs, button clicks, game scores, and navigation events.</li>
+        <li><strong>Purpose:</strong> Product improvement and bug tracking.</li>
+        <li><a href="https://posthog.com/privacy" target="_blank">PostHog Privacy Policy</a></li>
     </ul>
 
-    <p>The Service Provider may disclose User Provided and Automatically Collected Information:</p>
+    <h3>2.2 Payments (RevenueCat)</h3>
+    <p>We use <strong>RevenueCat</strong> to manage subscriptions and in-app purchases.</p>
     <ul>
-        <li>as required by law, such as to comply with a subpoena, or similar legal process;</li>
-        <li>when they believe in good faith that disclosure is necessary to protect their rights, protect your safety or the safety of others, investigate fraud, or respond to a government request;</li>
-        <li>with their trusted services providers who work on their behalf, do not have an independent use of the information we disclose to them, and have agreed to adhere to the rules set forth in this privacy statement.</li>
+        <li><strong>Data Collected:</strong> Purchase history and an anonymous App User ID. If you are signed in, this ID is linked to your account to allow you to restore purchases on other devices.</li>
+        <li><a href="https://www.revenuecat.com/privacy" target="_blank">RevenueCat Privacy Policy</a></li>
     </ul>
 
-    <h2>Data Retention & Deletion Policy</h2>
+    <h3>2.3 Database & Auth (Supabase)</h3>
+    <p>We use <strong>Supabase</strong> to securely store user profiles, learning stats, and uploaded avatars.</p>
+    <ul>
+        <li><a href="https://supabase.com/privacy" target="_blank">Supabase Privacy Policy</a></li>
+    </ul>
+
+    <h2>3. Daily Reminders & Notifications</h2>
+    <p>The Application allows you to schedule <strong>Daily Reminders</strong> to practice.</p>
+    <ul>
+        <li>These notifications are scheduled <strong>locally</strong> on your device.</li>
+        <li>We do not store your specific wake-up or practice schedule on external marketing servers.</li>
+        <li>You can turn off these notifications at any time in the app settings or your device settings.</li>
+    </ul>
+
+    <h2>4. Data Retention & Deletion</h2>
     <p>The Service Provider will retain User Provided data for as long as you use the Application and for a reasonable time thereafter.</p>
     
-    <p><strong>Account Deletion:</strong> You have the right to delete your account and all associated data at any time. You can perform this action directly within the application by navigating to <em>Profile &gt; Settings &gt; Delete Account</em>. Alternatively, you may contact us at <a href="mailto:bopomofo-app@proton.me">bopomofo-app@proton.me</a> to request deletion. Upon deletion, all your personal data (including learning progress, subscriptions, and game stats) will be permanently removed from our servers.</p>
+    <p><strong>Right to Delete:</strong> You have the right to delete your account and all associated data at any time. You can perform this action directly within the application by navigating to <em>Profile &gt; Settings &gt; Delete Account</em>. Alternatively, you may contact us at <a href="mailto:bopomofo-app@proton.me">bopomofo-app@proton.me</a> to request deletion.</p>
 
-    <h2>GDPR Data Protection Rights</h2>
-    <p>We would like to make sure you are fully aware of all of your data protection rights. Every user is entitled to the following:</p>
-    <ul>
-        <li><strong>The right to access</strong> – You have the right to request copies of your personal data.</li>
-        <li><strong>The right to rectification</strong> – You have the right to request that we correct any information you believe is inaccurate.</li>
-        <li><strong>The right to erasure</strong> – You have the right to request that we erase your personal data, under certain conditions.</li>
-        <li><strong>The right to restrict processing</strong> – You have the right to request that we restrict the processing of your personal data.</li>
-    </ul>
+    <h2>5. Children</h2>
+    <p>The Service Provider does not knowingly collect personally identifiable information from children under 13 years of age. If a parent or guardian becomes aware that their child has provided us with personal information without their consent, please contact us at <a href="mailto:bopomofo-app@proton.me">bopomofo-app@proton.me</a>. We will delete such information from our files within a reasonable time.</p>
 
-    <h2>Children</h2>
-    <p>The Service Provider does not use the Application to knowingly solicit data from or market to children under the age of 13.</p>
-    <p>The Application does not address anyone under the age of 13. The Service Provider does not knowingly collect personally identifiable information from children under 13 years of age. In the case the Service Provider discovers that a child under 13 has provided personal information, the Service Provider will immediately delete this from their servers. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact the Service Provider (bopomofo-app@proton.me) so that they will be able to take the necessary actions.</p>
-
-    <h2>Security</h2>
-    <p>The Service Provider is concerned about safeguarding the confidentiality of your information. The Service Provider provides physical, electronic, and procedural safeguards to protect information the Service Provider processes and maintains.</p>
-    
-    <h2>Changes</h2>
-    <p>This Privacy Policy may be updated from time to time for any reason. The Service Provider will notify you of any changes to the Privacy Policy by updating this page with the new Privacy Policy. You are advised to consult this Privacy Policy regularly for any changes, as continued use is deemed approval of all changes.</p>
-    
-    <p>This privacy policy is effective as of <strong>2025-12-29</strong></p>
-    
-    <h2>Your Consent</h2>
-    <p>By using the Application, you are consenting to the processing of your information as set forth in this Privacy Policy now and as amended by us.</p>
+    <h2>6. Changes</h2>
+    <p>This Privacy Policy may be updated from time to time. You are advised to consult this Privacy Policy regularly for any changes, as continued use is deemed approval of all changes.</p>
     
     <h2>Contact Us</h2>
-    <p>If you have any questions regarding privacy while using the Application, or have questions about the practices, please contact the Service Provider via email at <a href="mailto:bopomofo-app@proton.me">bopomofo-app@proton.me</a>.</p>
+    <p>If you have any questions regarding privacy while using the Application, please contact the Service Provider via email at <a href="mailto:bopomofo-app@proton.me">bopomofo-app@proton.me</a>.</p>
 </body>
 </html>
